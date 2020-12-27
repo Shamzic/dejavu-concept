@@ -1,0 +1,117 @@
+.have-comments-area {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+.comment-respond {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+.comments-title, .comment-reply-title {
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.comment-list {
+    padding: 0;
+    list-style: none;
+    li {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+        &:last-child {
+            border-bottom:0;
+        }
+        li:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        }
+    }
+    .comment-content p {
+		margin-bottom: 20px;
+	}
+	.comment-content p:last-child {
+		margin-bottom: 0;
+	}
+    li.parent > .comment-body {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+    }
+    .comment-body {
+        position: relative;
+    }
+    .comment-meta {
+        position: relative;
+        padding-left: 76px;
+    }   
+    .comment-author {
+        img {
+            border-radius: 50%;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        span.says {
+            display: none;
+        }
+        b.fn, b.fn a {
+            text-transform: uppercase;
+            color:#444;
+        }
+    }
+    .comment-metadata, .comment-metadata a {
+        font-size: 12px;
+        color: #999;
+        font-style: italic;
+    }
+    .comment-metadata .edit-link {
+        margin-left: 5px;
+        border-bottom: 1px solid #999;
+    }
+    .comment-content {
+        padding-left: 76px;
+    }
+    ul.children {
+        list-style: none;
+        padding-left: 40px;
+    }
+    .reply a {
+            padding: 0px 8px;
+            margin-left: 5px;
+            border-radius: 0px;
+            border: 1px solid #999;
+            position: absolute;
+            top: 0;
+            font-size: 13px;
+            right: 5px;
+            color:#999;
+            background: transparent;
+            .transition(background 0.2s ease-in-out);
+
+            &:hover {
+                background: #999;
+                color:#fff;
+            }
+    }
+}
+.comment-respond {
+    label {
+        display: block;
+        font-weight: 700;
+    }
+    .comment-form-cookies-consent label {
+		display: inline-block;
+		margin-left:5px
+	}
+    p {
+        margin-bottom: 16px;
+    }
+    p.logged-in-as, p.logged-in-as a {
+        text-transform: uppercase;
+        color: #999;
+        margin-bottom: 5px;
+        &:hover {
+            color: #444;
+        }
+    }
+}

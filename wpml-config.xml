@@ -1,0 +1,276 @@
+<wpml-config>                             
+    <custom-types>
+        <custom-type translate="1">portfolio</custom-type>
+        <custom-type translate="1">staff</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+    </custom-types>    
+    <taxonomies>
+        <taxonomy translate="1">portfolio-type</taxonomy>
+        <taxonomy translate="1">testimonial-group</taxonomy>
+        <taxonomy translate="1">staff-group</taxonomy>
+    </taxonomies>    
+    <admin-texts>
+        <key name="ascend">
+            <key name="home_page_title_typed">
+            	<key name="0" />
+                <key name="1" />
+                <key name="2" />
+            </key>
+            <key name="home_page_title" />
+            <key name="home_page_sub_title" />
+            <key name="home_basic_slider">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="home_shortcode_entry" />
+            <key name="home_mobile_page_title_typed">
+				<key name="0" />
+				<key name="1" />
+				<key name="2" />
+            </key>
+            <key name="home_mobile_page_title" />
+            <key name="home_mobile_page_sub_title" />
+            <key name="home_mobile_basic_slider">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="home_mobile_shortcode_entry" />
+            <key name="home_blog_title" />
+            <key name="home_post_type" />
+            <key name="home_post_readmore_text" />
+            <key name="home_post_readmore_link" />
+            <key name="home_featured_title" />
+            <key name="home_best_title" />
+            <key name="home_sale_title" />
+            <key name="home_latest_title" />
+            <key name="home_image_menu">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="icon_menu">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="home_icon_menu_btn" />
+            <key name="home_portfolio_carousel_title" />
+            <key name="home_portfolio_carousel_type" />
+            <key name="custom_carousel_title" />
+            <key name="home_custom_carousel_items">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="portfolio_full_title" />
+            <key name="home_portfolio_full_type" />
+            <key name="shop_basic_slider">
+                <key name="0">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="1">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="2">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="3">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="4">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+                <key name="5">
+                    <key name="link" />
+                    <key name="title" />
+                    <key name="description" />
+                </key>
+            </key>
+            <key name="shop_shortcode_entry" />
+            <key name="product_header_title_text" />
+            <key name="product_header_subtitle_text" />
+            <key name="portfolio_header_title_text" />
+            <key name="portfolio_header_subtitle_text" />
+            <key name="portfolio_link" />
+            <key name="blog_header_title_text" />
+            <key name="blog_header_subtitle_text" />
+            <key name="staff_header_title_text" />
+            <key name="staff_header_subtitle_text" />
+            <key name="testimonial_header_title_text" />
+            <key name="testimonial_header_subtitle_text" />
+            <key name="search_placeholder_text" />
+            <key name="tl_cart" />
+            <key name="tl_login_signup" />
+            <key name="tl_my_account" />
+            <key name="post_readmore_text" />
+            <key name="post_by_text" />
+            <key name="filter_all_text" />
+            <key name="filter_text" />
+            <key name="sold_placeholder_text" />
+            <key name="sale_placeholder_text" />
+            <key name="wc_clear_placeholder_text" />
+            <key name="notavailable_placeholder_text" />
+            <key name="description_tab_text" />
+            <key name="description_header_text" />
+            <key name="additional_information_tab_text" />
+            <key name="additional_information_header_text" />
+            <key name="reviews_tab_text" />
+            <key name="related_products_text" />
+            <key name="wc_upsell_products_text" />
+            <key name="lightbox_of_text" />
+            <key name="lightbox_error_textt" />
+            <key name="blog_link" />
+            <key name="staff_link" />
+            <key name="testimonial_link" />
+            <key name="home_breadcrumb_text" />
+            <key name="footer_text" />
+        </key>
+    </admin-texts>    
+</wpml-config>

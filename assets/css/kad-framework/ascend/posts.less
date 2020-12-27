@@ -1,0 +1,315 @@
+// Meta 
+.post-top-meta {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.kt_post_category a {
+    display: inline;
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.kt_post_category a:hover {
+    text-decoration: underline;
+}
+.single-article {
+    header h1 {
+        margin: 5px 0;
+    }
+    .kt_post_category {
+        margin-top: 10px;
+    }
+    .kt_no_post_header_content .kt_post_category {
+        margin-top: 0px;
+    }
+}
+// Bottom Post links
+
+.kt_postlink_title {
+    display: block;
+}
+.kt_postlink_meta {
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+}
+.kad-previous-link{
+    text-align: left;
+    
+    a {
+        position: relative;
+        padding-left: 40px;
+        display: block;
+    
+        &:before {
+            .icon_font();
+            content: "\f104";
+            top: 50%;  
+            left:0;
+            .translate(0, -50%);
+            .transition(all 0.2s ease-in-out);
+            font-size: 30px;
+            position: absolute;
+        }
+    }
+    &:hover a:before {
+        left: -10px;
+    }
+}
+.kad-next-link {
+    text-align: right;
+    a {
+        position: relative;
+        padding-right: 40px;
+        display: block;
+        
+        &:before {
+            .icon_font();
+            content: "\f105";
+            top: 50%;  
+            right:0;
+            .translate(0, -50%);
+            .transition(all 0.2s ease-in-out);
+            font-size: 30px;
+            position: absolute;
+        }
+    }
+    &:hover a:before {
+        right: -10px;
+    }
+}
+.posttags, .tagcloud {
+    text-transform: uppercase;
+    font-weight: bold;
+    a {
+        padding: 2px 4px;
+        border: 2px solid @gray;
+        color: @gray;
+        display: inline-block;
+        font-size: 13px;
+        margin: 2px 0 2px 2px;
+        line-height: 20px;
+        font-weight: 400;
+        .transition(all 0.2s ease-in-out);
+        &:hover {
+            border-color:@primary;
+            color: @primary
+        }
+    }
+}
+.author-box {
+    .kt_author_avatar {
+        position: absolute;
+        left: 0;
+    }
+    .author-profile{
+        position: relative;
+        padding-left: 95px;
+    }
+    .author-follow {
+        margin-top: 10px;
+        a {
+            color:#555;
+        }
+    }
+    h5 a {
+	    color: inherit;
+	}
+	.vcard i {
+		padding-right: 0;
+	}
+}
+.kt-quote-post {
+    position: relative;
+    padding: 40px 80px;
+    border: 2px solid rgba(0,0,0,.35);
+    text-align: center;
+    line-height: 24px;
+    &:before {    
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 34px;
+        color: @gray;
+        color: rgba(0,0,0,.2);
+        .icon_font();
+        content: "\f10d";
+    }
+    &:after {    
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 34px;
+        color: @gray;
+        color: rgba(0,0,0,.2);
+       .icon_font();
+        content: "\f10e";
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+.kt-image-quote {
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.kt-image-quote .kt-quote-post {
+	border-color: rgba(255,255,255,.50);
+	p {
+		padding: 5px;
+	    display: inline;
+	    background: white;
+	    box-shadow: 10px 0 0 white, -10px 0 0 white;
+	    line-height: 36px;
+	}
+	&:before {
+		color: rgba(255,255,255,.50);
+	}
+	&:after { 
+		color: rgba(255,255,255,.50);
+	}
+}
+.kt-quote-post-author {
+    text-align: right;
+    width: 80%;
+    margin: 5px auto;
+    font-weight: bold;
+}
+article.format-quote .single-footer{
+    border-top:0;
+}
+
+// Sections 
+.post-footer-section {
+    padding: 30px 0;
+    position: relative;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+.author-box.post-footer-section {
+    border-bottom:0;
+}
+.single-footer {
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.post-carousel-title {
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+// Upper content
+.kt-upper-head-content {
+    margin-top: 6px;
+}
+.thumb-slider-container {
+    margin: 0 auto;
+}
+// Collage 
+.kad_postgrid_wrap {
+    margin: -3px;
+}
+.kpgi {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    float: left;
+}
+.kpgi-inner{
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    overflow: hidden;
+}
+
+.kt-5-collage {
+    .side-post-gal-1{
+        width: 20%;
+        float: left;
+        .kpgi { 
+        padding-bottom: 100%;
+        }
+    }
+    .side-post-gal-4{
+        width: 40%;
+        float: left;
+    }
+    .kpgi { 
+        width: 100%;
+    }
+    .kpgi.kad_post_grid_item-3 {
+        width: 40%;
+        padding-bottom: 40%;
+    }
+}
+.kt-4-collage {
+    .kpgi.kad_post_grid_item-1 {
+        width: 40%;
+        padding-bottom: 60%;
+    }
+    .side_post_gal {
+        width: 60%;
+        float: left;
+    }
+    .kpgi.kad_post_grid_item-4 {
+        width: 100%;
+        float: left;
+    }
+}
+.kt-3-collage {
+    .kpgi.kad_post_grid_item-1 {
+        width: 60%;
+        padding-bottom: 40%;
+    }
+    .side_post_gal {
+        width: 40%;
+        float: left;
+    }
+    .kpgi.kad_post_grid_item-2 {
+        width: 100%;
+        float: left;
+    }
+     .kpgi.kad_post_grid_item-3 {
+        width: 100%;
+        float: left;
+    }
+}
+.kt-2-collage {
+    .kpgi.kad_post_grid_item-1 {
+        width: 60%;
+        padding-bottom: 40%;
+    }
+    .kpgi.kad_post_grid_item-2 {
+        width: 40%;
+        padding-bottom: 40%;
+    }
+}
+
+.blog-bottom-carousel .kt-slickslider {
+    .slick-prev, .slick-next {
+        height: 34px;
+        width: 24px;
+        &:before {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .slick-prev {
+        left: 10px;
+    }
+    .slick-next {
+        right: 10px;
+    }
+    .grid_item {
+        margin-bottom: 0;
+    }
+}
+.postfeat{
+    text-align: center;
+}

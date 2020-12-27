@@ -1,0 +1,78 @@
+.page-header {
+    margin: 0;
+    height: 240px;
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    .page-header-inner {
+    	width:100%;
+    	display: table-cell;
+   		vertical-align: middle;
+    }
+}
+.titleclass {
+    h1, .h1class {
+        margin: 0;
+        color:#fff;
+        font-size: 70px;
+        line-height: 1;
+    }
+    .subtitle {
+        color: #fff;
+        font-size: 40px;
+        line-height: 1;
+        display: block;
+        margin-top: 20px;
+    }
+}
+.kt_bc_active .page-header {
+    padding-bottom: 32px;
+}
+.titleclass {
+    background: #444;
+    position: relative;
+    #kadbreadcrumbs {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+#kadbreadcrumbs {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+    color: #eee;
+    background: rgba(0,0,0,.2);
+    padding: 6px 0;
+    width: 100%;
+    a {
+        border-bottom: 2px solid #eee;
+        color: #eee;
+        .transition(all 0.2s ease-in-out);
+        &:hover {
+            color:@primary;
+            border-color:@primary;
+        }
+    }
+}
+.kt_bc_nomargin {
+	#kadbreadcrumbs {
+	    color:#777;
+	    background:rgba(0,0,0,.1);
+		 a {
+		    color:#777;
+		    border-bottom-color: #bbb;
+		    &:hover {
+            	color:@primary;
+            	border-color:@primary;
+        	}
+		}
+	}
+}
+.kad-ascend-parallax, .kt-parallax-stellar {
+	background-attachment: fixed !important;
+	-moz-background-size: cover!important;
+	-webkit-background-size: cover!important;
+	background-size: cover!important;
+}

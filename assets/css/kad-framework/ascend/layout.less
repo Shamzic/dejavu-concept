@@ -1,0 +1,255 @@
+// Header
+@media (min-width: 993px) {
+    .kad-header-position-left #wrapper {
+        padding-left: 240px;
+    }
+    .kad-header-position-right #wrapper {
+        padding-right: 240px;
+    }
+    .container {
+        width: 90%;
+        max-width: 1170px;
+    }
+    .kt-width-small .container{
+        max-width: 940px;
+    }
+}
+@media (min-width: 767px) {
+    .container {
+        width: 90%;
+        max-width: 1140px;
+    }
+    .container .container .container {
+        width: 100%;
+    }
+    .container .kt-custom-row-full-stretch .container {
+    	 width: 90%;
+    }
+    .kt-width-large.kt-width-xlarge.kt-width-full .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 1500px) {
+    .kt-width-large .container, .kt-width-xlarge .container{
+        max-width: 1470px;
+    }
+}
+@media (min-width: 1800px) {
+    .kt-width-xlarge .container{
+        max-width: 1770px;
+    }
+}
+#wrapper {
+	min-height:100vh;
+    overflow: hidden;
+    padding:0;
+}
+body.body-style-normal #wrapper, body.body-style-bubbled #wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+body.body-style-boxed #wrapper {
+    width: 100% !important;
+    position: relative;
+}
+
+// sidebar
+@media (min-width: 992px) {
+	.main.kt-sidebar {
+	    padding-right: 50px;
+	}
+	.kt-fullwidth .main.kt-sidebar {
+	    padding-right: 20px;
+	}
+	.main.col-lg-9.kt-sidebar-left  {
+		float: right;
+		padding-right: 15px;
+		padding-left: 50px;
+	}
+}
+.kt-sidebar .kt-custom-row-full-stretch {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+#content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body.siteorigin-panels:not(.single-product):not(.woocommerce-checkout):not(.single-post) #content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+body.siteorigin-panels:not(.single-product):not(.woocommerce-checkout):not(.single-post) #ktsidebar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body.kt-single-post-no-inner-title.siteorigin-panels.single-post #content {
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+body.kt-single-post-no-inner-title.siteorigin-panels.single-post #ktsidebar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#content.page-content-no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+// Bubbled 
+body.body-style-bubbled .contentclass {
+	background:transparent;
+}
+body.body-style-bubbled {
+	.postclass {
+		background:white;
+		padding: 15px;
+	}
+	.kt-title span, .sidebar .widget-title span, .above-footer-widgets .widget-title span, .footer-widget-title span {
+		background:#f2f2f2;
+	}
+	footer.single-footer .post-footer-section:last-child {
+	    border:0;
+	}
+}
+
+.headerclass, .mobile-headerclass {
+	background: #fff;
+	.transition(all 0.2s ease-in-out); 
+}
+.ascend-trans-logo {
+    display: none;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass {
+    background: transparent;
+}
+
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .nav-main ul.sf-menu > li > a, body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kt-header-extras ul.sf-menu > li > a, body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kt-header-extras .kt-extras-label [class*="kt-icon-"], body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kt-header-extras .kadence_social_widget a, body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .second-navclass .sf-menu > li > a, body.trans-header:not(.kad-header-position-above) div:not(.is-sticky) > .second-navclass .sf-menu > li > a {
+	color:#fff;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kt-header-extras .kadence_social_widget a {
+	border-color: rgba(255,255,255,.35);
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kad-site-tagline {
+	color:#fff;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass #logo a.brand {
+	color:#fff;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .second-navclass {
+    background: transparent;
+}
+body.trans-header div:not(.is-sticky) > .second-navclass {
+    background: transparent;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .second-navclass  .sf-menu>li:after {
+	background: #fff;
+}
+body.trans-header:not(.kad-header-position-above) div:not(.is-sticky) > .second-navclass  .sf-menu>li:after {
+	background: #fff;
+}
+body.trans-header div:not(.is-sticky) > .mobile-headerclass {
+	background: transparent;
+}
+body.trans-header div:not(.is-sticky) > .mobile-headerclass .kt-mobile-header-toggle button, body.trans-header div:not(.is-sticky) > .mobile-headerclass .kad-site-tagline, body.trans-header div:not(.is-sticky) > .mobile-headerclass #mobile-logo a, body.trans-header div:not(.is-sticky) > .mobile-headerclass #mobile-logo .kad-mobile-site-title, body.trans-header div:not(.is-sticky) > .mobile-headerclass .kad-mobile-site-tagline{
+	color: #fff;
+}
+body.trans-header div:not(.is-sticky) > .headerclass-outer div:not(.is-sticky) > .kad-header-topbar-primary-outer div:not(.is-sticky) > .headerclass .kt-header-extras .kadence_social_widget a:hover {
+	color:#fff;
+}
+body.trans-header div:not(.is-sticky) > .mobile-headerclass .kt-mnt span {
+	background: #fff;
+}
+body.trans-header #kad-header-menu, body.trans-header #kad-mobile-banner{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+   z-index: 1000;
+    border-bottom: 1px solid transparent;
+}
+body.trans-header.body-style-boxed #kad-header-menu {
+	left: auto;
+}
+body.trans-header:not(.kad-header-position-above) .outside-second .second-navclass{
+    position: absolute;
+    width: 100%;
+    top: 0;
+   z-index: 1000;
+    border-bottom: 1px solid transparent;
+}
+body.trans-header:not(.kad-header-position-above) .outside-second .sticky-wrapper {
+	height: 0 !important;
+}
+body.trans-header:not(.kad-header-position-above) .outside-second {
+	position: relative;
+}
+body.trans-header #kad-header-menu-sticky-wrapper {
+    height: 0 !important;
+}
+body.trans-header #kad-mobile-banner-sticky-wrapper {
+	height: 0 !important;
+}
+body.trans-header.admin-bar:not(.body-style-boxed) #kad-header-menu, body.trans-header.admin-bar:not(.body-style-boxed) #kad-mobile-banner{
+    top: 32px;
+}
+@media screen and (max-width: 782px) {
+	body.trans-header.admin-bar:not(.body-style-boxed) #kad-mobile-banner {
+	    top: 46px;
+	}
+}
+.contentclass {
+	background:white;
+}
+body {
+	background:#f2f2f2;
+}
+
+#content.container-fullwidth {
+    width: 100%;
+    max-width: 100%;
+    padding-top:0;
+    padding-bottom:0;
+}
+.container-fullwidth .main.kt-nosidebar {
+    padding: 0;
+    overflow: hidden;
+}
+.container-fullwidth .main.kt-sidebar, .container-fullwidth #ktsidebar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*
+.sf-vertical.sf-menu > li > a:before {
+    width:50%;
+    height: 2px;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    .scale(0);
+    content: '';
+    background: rgba(0,0,0,.1);
+    .transition(all 0.3s ease-in-out);
+}
+.sf-vertical.sf-menu > li:hover > a:before {
+	.scale(1);
+}
+*/
+.sf-menu a {
+	color: #444;
+}
+.sf-vertical.sf-menu li.menu-widget-area-kt {
+    margin-top: 5px;
+}
+.siteorigin-panels-home #content.homepagecontent {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.kt-no-cell-margin .panel-grid-cell, .kt-no-cell-margin .panel-grid-cell .so-panel {
+    margin-bottom: 0 !important;
+}
+.kt-row-style-no-padding {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}

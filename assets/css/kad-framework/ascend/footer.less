@@ -1,0 +1,95 @@
+.footerclass {
+    background: #333;
+    color: #eee;
+    padding-top: 30px;
+    font-size: 14px;
+    a {
+        color: #f2f2f2;
+        &:hover {
+            color: @primary;
+        }
+    }
+    .widget {
+	    margin-top: 30px;
+	}
+	.widget.so-panel {
+	    margin-top: 0px;
+	}
+	.widget-first {
+	    margin-top: 0px;
+	}
+    .footer-widget-title {
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        &:before {
+            background: rgba(255,255,255,.3);
+        }
+        span {
+            background: #333;
+        }
+    }
+    .menu {
+        padding:0;
+        li {
+            list-style: none;
+            a {
+                padding: 5px 5px 0;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                line-height: 24px;
+                letter-spacing: 1px;
+                display: block;
+                border-bottom: 1px solid rgba(255,255,255,.3);
+                .transition(all 0.2s ease-in-out);
+                &:hover {
+                    border-color: @primary;
+                }
+            }
+        }
+    }
+    .kadence_social_widget {
+        text-align: left;
+            a{
+            border-color:rgba(255,255,255,.3);
+            &:hover {
+                border-color: rgba(0,0,0,.1);
+                color:#fff;
+            }
+        }
+    }
+}
+.footerclass .col-md-12 .kadence_social_widget {
+    text-align: center;
+}
+body.body-style-bubbled .footerclass .footer-widget-title span {
+	background: #333;
+}
+.footercredits {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 11px;
+    text-align:center;
+}
+.footerbase {
+    background: rgba(0,0,0,.1);
+    margin-top: 15px;
+}
+.footermenu {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: center;
+    li {
+    	display: inline-block;
+    	ul {
+    		padding:0;
+    		list-style: none;
+    	}
+    	a{
+    		padding:4px 6px;
+    		margin: 0 3px;
+    	}
+    }
+}

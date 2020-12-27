@@ -1,0 +1,239 @@
+.primary-color {
+	color: @primary;
+}
+ul, ol {
+padding:0;
+padding-left: 20px;
+}
+
+.kt_color_gray {
+	color:@gray;
+}
+a.kt_color_gray:hover {
+    color: @darkgray
+}
+.sidebar a:not(.button), .above-footer-widgets a:not(.button) {
+	color: #555;
+
+	&:hover {
+		color:@primary;
+	}
+}
+//Page navi
+.wp-pagenavi {
+	nav.navigation.pagination {
+       	text-align:center;
+        margin: 10px 0;
+        &:before {
+			clear: both;
+			display: table;
+			content: ' ';
+		}
+    }
+	a,
+	span {
+		padding:8px 18px;
+		font-weight:bold;
+		margin:5px;
+		display: inline-block;
+		color:@gray;
+		border: solid 2px @gray;
+		.transition(border 0.2s ease-in-out); 
+	}
+	a i {
+		vertical-align: sub;
+	    font-size: 20px;
+	    line-height: 20px;
+	    display: inline-block;
+	    width: 16px;
+	    margin-left: -4px;
+	}
+	a:hover {
+		border-color:@primary;
+		color:@primary;
+	}
+	.current {
+		color:#fff;
+		border-color: @primary;
+		background-color: @primary;
+	}
+}
+
+// top control
+#topcontrol .to_the_top {
+	.transition(all 0.2s ease-in-out);
+	bottom: 30px;
+	cursor: pointer;
+	height: 38px;
+	position: absolute;
+	right: 20px;
+	width: 38px;
+	z-index: 5;
+	color:rgba(0, 0, 0, 0.4);
+	text-align: center;
+	background: transparent;
+	border: 2px solid rgba(0,0,0,.4);
+	box-sizing: content-box;
+	&:hover {
+		border-color: rgba(0, 0, 0, 0.7);
+		color:rgba(0, 0, 0, 0.7);
+	}
+	> div {
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 10px;
+	}
+}
+// Smooth Scroll
+#ascrail2000 {
+	background-color: #666;
+	width: 0;
+	position: fixed;
+	z-index: 100000!important;
+}
+
+// Video Fit
+.videofit iframe {
+	max-width: 100%;
+}
+#supersized {
+	margin:0;
+	padding: 0;
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000;
+	}
+}
+#infscr-loading {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 1000;
+	text-align: center;
+	img {
+	  	max-width: 60px;
+	}
+}
+// 404
+
+.kt-404-alert {
+	text-align: center;
+	form.search-form {
+	    max-width: 300px;
+	    margin: 0 auto;
+	}
+}
+
+// Search results
+.kt_search_post_type {
+    text-transform: uppercase;
+    font-size: 12px;
+    border-left: 2px solid #aaa;
+    display: block;
+    padding-left: 4px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.search_results_item {
+    border: 2px solid #eee;
+    padding: 15px;
+}
+
+
+// Misc
+#bbpress-forums p.bbp-topic-meta img.avatar {
+	float: none !important;
+}
+.error-not-found {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid @gray;
+}
+// WORDPRESS Images (Align)
+.entry-content .aligncenter, .main .aligncenter, .footerclass .aligncenter {
+	display: block; 
+	margin-left:auto; 
+	margin-right:auto; 
+	clear: both; 
+}
+.alignleft { 
+	float: left;
+}
+.alignright { 
+	float: right; 
+}
+figure.wp-caption {
+    max-width: 100%;
+}
+figure.alignnone { 
+	margin-left: 0; 
+	margin-right: 0; 
+	clear: both; 
+}
+img.alignleft, .wp-caption.alignleft {
+	margin: 5px 20px 10px 0;
+}
+img.alignright, .wp-caption.alignright {
+	margin: 5px 0px 10px 20px;
+}
+img.alignnone, .wp-caption.alignnone  {
+	margin: 5px 0;
+}
+
+// Required, stop dumb errors
+.wp-caption {
+	text-align: center;
+}
+.wp-caption-text {
+	font-size: inherit;
+}
+html .sticky, html .postlist article.sticky {
+	font-size: inherit;
+}
+.gallery-caption {
+	font-size: inherit;
+}
+.bypostauthor {
+	font-size: inherit;
+}
+.kt-custom-row-full-stretch, .kt-custom-row-full {
+	visibility: hidden;
+}
+.no-js .kt-custom-row-full-stretch, .no-js .kt-custom-row-full{
+	visibility: visible;
+}
+.entry-content:after {
+clear: both;
+display: table;
+content: '';
+}
+#content .gallery.kt-image-carousel {
+    margin: 0;
+}
+.carousel-outer-container {
+    overflow: hidden;
+}

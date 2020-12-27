@@ -1,0 +1,66 @@
+// topbar
+.topbar-flex {
+	.flex-display(flex);
+	.align-items(center);
+	.justify-content(space-between);
+	position: relative;
+}
+.kt-topbar-right {
+	.flex-display(flex);
+	.align-items(center);
+	.justify-content(flex-end);
+}
+.kt-topbar-left {
+	.flex-display(flex);
+	.align-items(center);
+	.justify-content(flex-start);
+}
+.kad-topbar-flex-item .sf-menu > li > a{
+	line-height: 1.5;
+	padding:0 10px;
+}
+.kad-topbar-height {
+	min-height:36px;
+}
+.kad-topbar-flex-item .kt-header-extras {
+	span.kt-cart-total {
+	    width: 13px;
+	    height: 13px;
+	    top: -8px;
+	    line-height: 13px;
+	    font-size: 9px;
+	}
+	.kt-extras-label {
+	    line-height: inherit;
+	    cursor: pointer;
+	    [class*="kt-icon-"] {
+		    font-size: 22px;
+		    line-height: 1;
+		    vertical-align: sub;
+		}
+	}
+}
+.kad-topbar-flex-item, .kad-topbar-flex-item a {
+    color:#fff
+}
+.topbarclass {
+	background-color: #444;
+}
+.topbarclass .kt-woo-account-nav .kad-customer-name h5 {
+	color:#fff;
+}
+.kad-topbar-flex-item  .kadence_social_widget {
+            a{
+            width: 30px;
+		    line-height: 30px;
+		    height: 30px;
+		    font-size: 14px;
+		    margin: 0 2px;
+		    color: #fff;
+            border-color:rgba(255,255,255,.2);
+            &:hover {
+                border-color: rgba(0,0,0,.1);
+                color:#fff;
+            }
+        }
+    }

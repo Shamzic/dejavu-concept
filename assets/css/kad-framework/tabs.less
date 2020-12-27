@@ -1,0 +1,115 @@
+
+// Set
+
+// Tabs
+.kt-tabs{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  position: relative;
+ 	li:first-child {
+    	margin-left: 5px;
+	}
+  .clearfix();
+  &:before {
+    position: absolute;
+    z-index: 10;
+    height: 3px;
+    background: @primary;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    clear: both;
+    content: '';
+  }
+  > li {
+    float: left;
+
+    > a {
+      margin-right: 4px;
+      line-height: 20px;
+      border-bottom: 3px solid transparent;
+      padding: 8px 12px 8px 12px;
+      background: @gray;
+      color:white;
+      border-radius: 0 0;
+      display: block;
+      z-index: 2;
+      .transition(all 0.2s ease-in-out);
+      position: relative;
+      &:hover {
+        background: #b3b3b3;
+      }
+    }
+
+    // Active state, and it's :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: @primary;
+        border-bottom: 3px solid @primary;
+        cursor: default;
+      }
+    }
+  }
+}
+.kt-tab-content {
+    padding: 15px;
+    border:0;
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+.kt-tabs.kt-tabs-style2 {
+    text-align: center;
+	&:before {
+	    display:none;
+	}
+	> li {
+    float: none;
+    display:inline-block;
+
+    > a {
+      margin-right: 6px;
+      margin-left: 6px;
+      line-height: 1;
+      border-bottom: 2px solid transparent;
+      padding: 4px 12px;
+      background: transparent;
+      color:#444;
+      font-size: 24px;
+      display: block;
+      z-index: 2;
+      .transition(all 0.2s ease-in-out);
+      position: relative;
+      &:hover {
+        border-bottom: 2px solid @primary;
+        background: transparent;
+      }
+    }
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #444;
+        background-color: transparent;
+        border-bottom: 2px solid #444;
+        cursor: default;
+      }
+    }
+  }
+}
+.kt-tab-content.kt-tab-content-style2 {
+    padding: 15px 0px;
+}
+@media (max-width: 766px) {
+	.kt-tabs.kt-tabs-style2 > li > a {
+	    margin: 0 2px;
+	    font-size: 16px;
+	}
+}

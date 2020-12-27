@@ -1,0 +1,59 @@
+// Header
+.btn, .button, .submit, button, input[type="submit"] {
+    .box-shadow( inset 0px 0px 0px 0px rgba(0, 0, 0, .0) );
+    background-color:@primary;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    line-height: 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    width:auto;
+    border-radius: 0;
+    .transition(box-shadow 0.2s ease-in-out);
+
+    &:hover, &:focus {
+        .box-shadow( inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2) );
+    }
+}
+.btn.lg-kad-btn {
+	padding: 12px 20px;
+	font-size: 18px;
+}
+
+.btn.sm-kad-btn {
+	padding: 4px 10px;
+	font-size: 12px;
+}
+
+.comment-content a:not(.button), .entry-content p a:not(.button):not(.select2-choice):not([data-rel="lightbox"]) {
+    border-bottom:2px solid #eee;
+    .transition(border 0.2s ease-in-out);
+    &:hover {
+        border-color:@primary;
+    }
+}
+.kad-circle-iconclass {
+	padding: 20px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.kad-square-iconclass {
+	padding: 20px;
+	display: inline-block;
+}
+.kad-smcircle-iconclass {
+	padding: 5px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.kad-smsquare-iconclass {
+	padding: 5px;
+	display: inline-block;
+}
+.sf-menu button.search-submit {
+    padding: 8px 16px;
+}

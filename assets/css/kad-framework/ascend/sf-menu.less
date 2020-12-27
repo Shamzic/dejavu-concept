@@ -1,0 +1,346 @@
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 599;
+    text-align: left;
+    border:2px solid @light-gray;
+}
+
+.sf-menu > li {
+    display:inline-block;
+}
+.sf-menu li a i {
+	margin-right: 5px;
+}
+.sf-menu .kadence_social_widget a i {
+    margin: 0;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+    zoom:1;
+    letter-spacing: .2px;
+    padding:10px;
+    .transition(all 0.2s ease-in-out);
+}
+.sf-menu > li > a {
+    text-transform: uppercase;
+}
+.sf-menu ul a {
+    padding: 10px 15px;
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+.sf-menu.sf-menu-normal ul ul {
+    top: -2px !important;
+}
+.sf-menu.sf-menu-normal > li > ul:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 23px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 6px;
+    border-color: #eee;
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+.sf-menu.sf-menu-normal>li.menu-cart-icon-kt>ul:not(.kt-subright):before {
+	left:16px
+}
+.sf-menu ul {
+    background: #fff;
+    min-width: 12em; /* allow long menu items to determine submenu width */
+    *width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-vertical ul {
+    left:   100%;
+    top: 0;
+}
+.sf-vertical > li {
+  float: none;
+}
+.sf-vertical li {
+  width: 100%;
+}
+.kad-relative-vertical-content .sf-vertical ul {
+    margin-left: -2px;
+}
+.kad-relative-vertical-content .sf-vertical li {
+    z-index: 1000;
+}
+.kad-relative-vertical-content .sf-vertical ul nav.woocommerce-MyAccount-navigation ul {
+	margin-left: 0
+}
+/* styling for both css and generated arrows */
+.kt-showsub-indicator .sf-menu-normal .sf-dropdown > a:after {
+    right: 10px;
+    height: auto;
+        min-height: 20px;
+            text-align: right;
+    width: 16px;
+    vertical-align: bottom;
+    display: inline-block;
+    content: "\f0d7";
+    .icon_font();
+}
+.kt-showsub-indicator .sf-menu-normal .sf-dropdown-submenu > a:after {
+    position: absolute;
+    right: 10px;
+    height: auto;
+    width: 10px;
+    content: "\f0da";
+    .icon_font();
+}
+.kt-show-vertsub-indicator .sf-vertical .sf-dropdown > a:after, .kt-show-vertsub-indicator .sf-vertical .sf-dropdown-submenu > a:after {
+    position: absolute;
+    right: 10px;
+    height: auto;
+    width: 10px;
+    content: "\f0da";
+    display: inline;
+    .icon_font();
+}
+.kt-header-extras ul.sf-menu .kt-extras-label i.kt-icon-shopping-bag {
+	margin-right: 0;
+}
+.kt-showsub-indicator .widget_nav_menu .sf-dropdown-submenu > a:after, .kt-showsub-indicator .widget_nav_menu .sf-dropdown > a:after {
+	//display: none;
+}
+
+// Theme Styles
+.kad-vertical-menu-inner {
+    text-align: center;
+}
+.kad-relative-vertical-content .nav-main .sf-vertical > li {
+    padding: 0 0px;
+}
+.kad-relative-vertical-content .nav-main .sf-vertical ul {
+    border:2px solid @light-gray;
+    text-align: left;
+    margin-left: -2px;
+}
+.kad-relative-vertical-content .nav-main .sf-vertical ul ul {
+    margin-left: 0;
+}
+
+.kad-relative-vertical-content .nav-main .sf-vertical li {
+    z-index: 1000;
+}
+.kad-relative-vertical-content ul.sf-menu.sf-vertical {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.nav-main .sf-menu > li > a i {
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    margin-right: 0;
+    text-align: center;
+}
+.sf-menu-normal > li > ul.kt-subright {
+	left: auto;
+	right: 0;
+	&:before {
+		left: auto;
+		right:23px;
+	}
+}
+// mega menu
+.sf-menu.sf-menu-normal > li.kt-lgmenu > ul {
+	left: 50%;
+    margin-left: -200px;
+	width:400px;
+	&:before {
+		left: 50%;
+		margin-left: -6px;
+	}
+	> li {
+		width:50%;
+		float: left;
+		> a {
+			padding-top: 15px;
+			text-transform: uppercase;
+			&:before {
+			    content:'';
+			    display:block;
+			    position:absolute;
+			    width:auto;
+			    left:15px;
+			    right:15px;
+			    height:1px;
+			    background:rgba(0,0,0,.1);
+			    bottom:0;
+			}
+		}
+		a:after {
+				display: none;
+		}
+		ul {
+			position: static;
+			border: 0;
+			display: block !important;
+			opacity: 1 !important;
+			min-width: 100%;
+		}
+	}
+}
+.sf-menu.sf-menu-normal > li.kt-lgmenu {
+	&.kt-menu-column-3 {
+		> ul {
+			margin-left: -300px;
+			width:600px;
+			> li {
+			width: 33.33%
+			}
+		}
+	}
+	&.kt-menu-column-4 {
+		> ul {
+			margin-left: -450px;
+			width:900px;
+			> li {
+			width: 25%
+			}
+		}
+	}
+}
+.sf-menu.sf-menu-normal > li.kt-lgmenu > ul.kt-subright {
+    left: auto;
+    right: -100px;
+    &:before {
+		left: auto;
+    	right: 150px;
+	}
+}
+.sf-menu.sf-vertical > li.kt-lgmenu > ul {
+	width: 400px;
+	> li {
+		width:50%;
+		float: left;
+		> a {
+			text-transform: uppercase;
+			&:before {
+			    content:'';
+			    display:block;
+			    position:absolute;
+			    width:auto;
+			    left:15px;
+			    right:15px;
+			    height:1px;
+			    background:rgba(0,0,0,.1);
+			    bottom:0;
+			}
+		}
+		a:after {
+				display: none;
+		}
+		ul {
+			position: static;
+			border: 0;
+			display: block !important;
+			opacity: 1 !important;
+			min-width: 100%;
+		}
+	}
+}
+.sf-menu.sf-vertical > li.kt-lgmenu {
+	&.kt-menu-column-3 {
+		> ul {
+			width:600px;
+			> li {
+			width: 33.33%
+			}
+		}
+	}
+	&.kt-menu-column-4 {
+		> ul {
+			width:900px;
+			> li {
+			width: 25%
+			}
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.sf-menu.sf-menu-normal > li.kt-lgmenu.kt-menu-column-4 {
+		position: static;
+		> ul {
+			width: 100%;
+			margin-left: 0 !important;
+		    right: 0;
+		    left: auto;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	.sf-menu.sf-vertical > li.kt-lgmenu.kt-menu-column-4 {
+		> ul {
+			width:680px;
+		}
+	}
+}
+// Topbar
+.topbarclass .sf-menu ul {
+    background:#444;
+    border-color:rgba(0,0,0,.2);
+}
+.topbarclass .sf-menu.sf-menu-normal > li > ul:before {
+    border-bottom-color:rgba(0,0,0,.2);
+}
+// Mobile Menu
+.kad-mobile-nav {
+	li {
+		position: relative;
+		.kad-submenu-accordion {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: auto;
+			text-align: center;
+			height: auto;
+			padding: 8px 15px;
+		}
+		.kad-submenu-accordion.toggle-active {
+			background: rgba(0,0,0,.07);
+		}
+		.kad-submenu-accordion i.kt-icon-chevron-up, .kad-submenu-accordion i.kt-icon-chevron-up {
+			display: none;
+		}
+		.kad-submenu-accordion.toggle-active i.kt-icon-chevron-down, .kad-submenu-accordion.toggle-active i.kt-icon-chevron-down {
+			display: none;
+		}
+		.kad-submenu-accordion.toggle-active i.kt-icon-chevron-up, .kad-submenu-accordion.toggle-active i.kt-icon-chevron-up {
+			display: block;
+			line-height: inherit;
+		}
+		.kad-submenu-accordion i {
+			padding-right: 0px;
+		}
+		.kad-nav-collapse.in {
+		    height: auto;
+		}
+	}
+}
